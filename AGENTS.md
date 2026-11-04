@@ -47,4 +47,3 @@ and report their results.
 - Read relevant files and list planned files before editing.
 - Keep changes limited to the task.
 - Summarise changes and report all three checks.
-
