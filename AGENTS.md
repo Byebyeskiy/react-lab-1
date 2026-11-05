@@ -1,11 +1,12 @@
 # AGENTS.md
 
-A single-page app on React 19 and Vite 8, using JavaScript and JSX.
+React laboratory apps on React 19 and Vite 8, using JavaScript and JSX.
 User-facing text is in Ukrainian. No TypeScript or React Compiler yet.
 
 ## Commands
 
-- `npm install`: install dependencies.
+- Run `npm install` in the repository root to install workspace dependencies.
+- Run all application commands below from the relevant `lab-N/` directory.
 - `npm run dev`: start the development server at http://localhost:5173.
 - `npm run lint`: check ESLint rules.
 - `npm run format`: format files with Prettier.
@@ -16,7 +17,20 @@ User-facing text is in Ukrainian. No TypeScript or React Compiler yet.
 A task is done only after lint, format:check and build pass. Run all three
 and report their results.
 
+## Scope
+
+- Work only in the lab directory named in the user's task.
+- Do not modify other labs or root files unless the task explicitly requires it.
+- Root configuration and shared editor settings apply to all labs.
+
 ## Structure
+
+- Root `package.json`: private `react-labs` workspace with `lab-*` members.
+- Root `package-lock.json`: shared dependency lockfile; do not create lab lockfiles.
+- `lab-1/`: the first laboratory application.
+- Future applications belong in separate `lab-N/` directories.
+- Root `AGENTS.md`, `.gitattributes` and `.vscode/`: shared rules and settings.
+- Paths below are relative to the relevant lab directory.
 
 - `index.html`: HTML entry with the root element.
 - `src/main.jsx`: createRoot and StrictMode.
